@@ -10,10 +10,10 @@ function getChangedURL(originalText)
   return serverURL+"?"+"text="+originalText
 }
 
-function errorHandler(error){
-     console.log("error occured! ", error )
-     alert("server is down! try again after some time")
-}
+// function errorHandler(error){
+//      console.log("error occured! ", error )
+//      alert("server is down! try again after some time")
+// }
 
 
 
@@ -30,7 +30,7 @@ function clicking()
   .then(json=>{
   var translatedText=json.contents.translated;
    outputTxt.innerText=translatedText;
-   .catch(errorHandler)
+   // .catch(errorHandler)
 
   })
 
